@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aphex Twin | IDM Pioneer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Шапка -->
+    <header class="header">
+        <div class="container header__container">
+            <a href="index.html" class="logo">APHEX TWIN</a>
+            <nav class="nav" id="nav">
+                <ul class="nav__list">
+                    <li><a href="#history" class="nav__link">История</a></li>
+                    <li><a href="#discography" class="nav__link">Дискография</a></li>
+                    <li><a href="#live" class="nav__link">Live</a></li>
+                    
+                </ul>
+                <button class="nav__close" id="navClose">&times;</button>
+            </nav>
+            <button class="burger" id="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Секция 1: Hero -->
+        <section class="hero">
+            <div class="container hero__content">
+                <h1 class="hero__title">PIONEER OF <span class="accent">IDM</span></h1>
+                <p class="hero__subtitle">Ричард Д. Джеймс переопределил границы электронной музыки, смешав эмбиент, брейкбит и шум.</p>
+                <a href="#discography" class="btn">Исследовать дискографию</a> <!-- Ссылка на доп. страницу -->
+            </div>
+        </section>
+
+        <!-- Секция 2: История -->
+        <section id="history" class="section history">
+            <div class="container history__container">
+                <div class="history__text">
+                    <h2 class="section__title">Истоки в Корнуолле</h2>
+                    <p>Родившийся в 1971 году в Лимерике, Ричард Д. Джеймс вырос в Корнуолле. Уже в детстве он конструировал собственные синтезаторы. В начале 90-х под псевдонимом Aphex Twin он выпустил "Selected Ambient Works 85-92", заложив фундамент для всего жанра Intelligent Dance Music.</p>
+                </div>
+                <div class="history__image">
+                    <!-- Заглушка для изображения. Вставьте реальное фото -->
+                    <div class="img-placeholder"> <img src="https://ir.ozone.ru/s3/multimedia-6/c1000/6715647546.jpg" ></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Секция 3: Дискография -->
+        <section id="discography" class="section discography">
+            <div class="container">
+                <h2 class="section__title center">Культовые релизы</h2>
+                <div class="grid">
+                    <div class="card">
+                        <div class="card__img" style="background: #222;"><img src="https://i5.walmartimages.com/asr/64b2fb9f-525b-4466-a8c7-574af47252d0.fa91bb5a526db218dc208e0f9feace70.jpeg?odnHeight=768&odnWidth=768&odnBg=FFFFFF" alt=""></div>
+                        <h3>Selected Ambient Works 85-92</h3>
+                        <p>1992 • Эмбиент-техно </p>
+                    </div>
+                    <div class="card">
+                        <div class="card__img" style="background: #333;"><img src="https://images.genius.com/893cf50761f6bda73ec1a8c74d3253c6.1000x1000x1.jpg" alt=""></div>
+                        <h3>Come to Daddy</h3>
+                        <p>1997 • Агрессивный брейккор</p>
+                    </div>
+                    <div class="card">
+                        <div class="card__img" style="background: #444;"><img src="https://upload.wikimedia.org/wikipedia/ru/6/67/Aphex_Twin_-_Drukqs.jpg" alt=""></div>
+                        <h3>Drukqs</h3>
+                        <p>2001 • Фортепиано и глитч</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Секция 4: Live -->
+        <section id="live" class="section live">
+            <div class="container">
+                <h2 class="section__title center">Самй популярный клип</h2>
+                <div class="live__wrapper">
+                    
+                    <!-- Контейнер для видео -->
+                    <div class="video-container">
+                        <!-- 
+                            autoplay: автозапуск
+                            muted: без звука (обязательно для autoplay в современных браузерах)
+                            loop: зацикливание
+                            playsinline: чтобы на iPhone видео играло в блоке, а не открывалось на весь экран
+                        -->
+                        <video class="live-video" autoplay muted loop playsinline>
+                            <!-- ЗАМЕНИТЕ src НА ПУТЬ К ВАШЕМУ ФАЙЛУ, например: src="live-video.mp4" -->
+                            <source src="aphex.mp4" type="video/mp4">
+                            Ваш браузер не поддерживает воспроизведение видео.
+                        </video>
+                        <!-- Необязательный оверлей с текстом поверх видео -->
+                        <div class="video-overlay">LIVE VISUALS</div>
+                    </div>
+
+                    <ul class="live__list">
+                        <li><span class="year">1999</span> <span class="event">Windowlicker</span></li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Футер -->
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer__copy">© 2026 Aphex Twin Fan Project. Все права защищены.</div>
+            <div class="footer__links">
+                <a href="#">Spotify</a>
+                <a href="#">Bandcamp</a>
+                <a href="#">Warp Records</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
